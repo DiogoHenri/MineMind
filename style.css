@@ -1,0 +1,41 @@
+body{
+    color: rgb(41, 5, 172);
+    background-color: rgb(198, 240, 157);
+    
+}
+
+.tudo{
+    
+    background-color: greenyellow;
+    border: solid;
+    border-radius: 10px;
+    width: auto;
+    border: solid;
+    text-align: left;
+    margin: 5px;
+    padding: 20px
+    
+}
+
+.FastItens{
+    position: sticky;
+    top: 10px;
+    background-color: greenyellow;
+    font-size: large;
+    font-family: fantasy;
+    border-radius: 10px;
+    width: auto;
+    border: solid;
+    text-align: left;
+    margin: 5px;
+    padding: 20px;
+    
+}
+table{
+    border-radius: 20px;
+}
+a:hover, a:focus {
+    font-size: xx-large;
+    
+}
+

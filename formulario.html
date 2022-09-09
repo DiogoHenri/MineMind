@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro curso</title>
+
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Cadastro do Aluno</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input placeholder="Digite seu nome..." type="text" id="nome" name="nome" required>
+            </div>
+
+            <div>
+                <label for="nome">Email:</label>
+                <input placeholder="Digite seu Email..." type="Email" id="Email" name="Email" required>
+            </div>
+
+            <div>
+                <label for="nome">numero de celular:</label>
+                <input placeholder="Digite seu numero de celular..." type="number" id="numero" name="numero" required>
+            </div>
+
+            <div>
+                <label>Data de Nascimento:</label>
+                <input name="dtNasc" value="2022-08-17" type="date" max="2022-08-17" min="1901-01-01">
+            </div>
+            <div>
+                <label>Cor favorita para colocar em seu uniforme:</label>
+                <input type="color" name="corFavorita">
+            </div>
+            <div>
+                <label>Etinia:</label>
+                <input checked value="Branco" name="cor" id="Branco" type="radio"><label for="branco">Branco</label>
+                <input value="Moreno" name="cor" id="Moreno" type="radio"><label for="Moreno">Moreno</label>
+                <input value="Pardo" name="cor" id="Pardo" type="radio"><label for="Pardo">Pardo</label>
+                <input value="Indigena" name="cor" id="Indigena" type="radio"><label for="Indigena">indigena</label>
+            </div>
+            <div>
+                <label for="nome">Endereço:</label>
+                <input placeholder="Digite seu Endereço..." type="text" id="Endereço" name="Endereço" required>
+            </div>
+            
+            <div>
+                <label>CEP:</label>
+                <input name="cep" pattern="[0-9]{5}-[0-9]{3}" title="Padrão do CEP: 99999-999">
+            </div>
+            
+                <button type="reset">Limpar</button>
+        </fieldset> 
+    </form>
+
+
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Cadastro do Responsavel</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input placeholder="Digite seu nome..." type="text" id="nome" name="nome" required>
+            </div>
+
+            <div>
+                <label for="nome">Naturalidade:</label>
+                <input placeholder="Digite sua Naturalidade..." type="text" id="Naturalidade" name="Naturalidade" id="Naturalidade" required>
+            </div>
+
+            <div>
+                <label for="nome">numero de celular:</label>
+                <input placeholder="Digite seu numero de celular..." type="number" id="numero" name="numero" required>
+            </div>
+
+            <div>
+                <label>Data de Nascimento:</label>
+                <input name="dtNasc" value="2022-08-17" type="date" max="2022-08-17" min="1901-01-01">
+            </div>
+            
+            <div>
+                <label for="nome">Endereço:</label>
+                <input placeholder="Digite seu Endereço..." type="text" id="Endereço" name="Endereço" required>
+            </div>
+            
+            <div>
+                <label>CPF:</label>
+                <input id="cpf" type="text" placeholder="insira seu CPF (somente números)" pattern="[0-9]{11}" required>
+            </div>
+            
+                <button type="reset">Limpar</button>
+        </fieldset> 
+    </form>
+
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Cadastro do curso</legend>
+            <div>
+                <label>Profissão</label>
+                <select name="profissao">
+                    <optgroup label="Cursos Disponiveis"></optgroup>
+                    <option value="PW">Programação Web</option>
+                    <option value="RC">Redes de computadores</option>
+                    <option value="BI">Business Intelligence </option>
+                </select>
+            </div>
+
+            <div>
+                <label>Valor</label>
+                <select name="Valor">
+                    <option value="PW">599,99</option>
+                    <option value="RC">323,90</option>
+                    <option value="BI">758,90</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Parcelas</label>
+                <select name="parcelas">
+                    <option value="uma">1x</option>
+                    <option value="duas">2x</option>
+                    <option value="tres">3x</option>
+                </select>
+            </div>
+
+            <div>
+                <label>forma de pagamento</label>
+                <select name="pagamento">
+                    <option value="credito">crédito</option>
+                    <option value="debito">débito</option>
+                    <option value="boleto">Boleto</option>
+                </select>
+            </div>
+        
+            <button type="submit">Salvar</button>
+                <button type="reset">Limpar</button>
+        </fieldset> 
+    </form>
+</body>
+
+</html>
